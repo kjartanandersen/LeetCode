@@ -1,9 +1,10 @@
 
+
 from typing import List
+
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-
         res = [1] * len(nums)
 
         prefix = 1
@@ -17,10 +18,9 @@ class Solution:
             postfix *= nums[i]
 
         return res
-
-
+    
 
 if __name__ == "__main__":
 
     solution = Solution()
-    print(str(solution.productExceptSelf([-1, 0, 1, 2, 3])))
+    print(solution.productExceptSelf(  nums = [1,2,3,4]  ))
